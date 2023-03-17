@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/dashbord/dashboard.css">
+    <link rel="shortcut icon" href="./trackify-website/assets/icons/logo-rouge.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="top-bar">
+            <ul>
+                <li>
+                    <h1 id="title">Marketplaces Map</h1>
+                </li>
+                <li id="search-bar">
+                    <input type="text" name="search" id="search" placeholder="Rechercher ..">
+                    <img src="./assets/loupe.svg" alt="search" id="search-icon">
+                </li>
+            </ul>
+        </div>
+        <div id="map-container">
+            <button id="show-details"><img src="./assets/view-details.svg" alt="show-detials"
+                    title="show details"></button>
+            <div id="car-details">
+                <div id="car-details-table">
+                    <table id="carDetails">
+                    </table>
+                </div>
+            </div>
+            <div id="map">
+                <iframe src="https://maps.google.com/maps?q=Alger;&output=embed">
+                </iframe>
+            </div>
+        </div>
+        <div id="positions">
+            <!-- <table id="table-head">
+                <thead>
+                    <tr>
+                        <th>Market</th>
+                        <th>Opening</th>
+                        <th>Closing</th>
+                    </tr>
+                </thead>
+
+            </table> -->
+            <div id="positions-container">
+                <table id="positionsTable">
+                </table>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="./scripts/mrketplaces.js"></script>
+</body>
+
+</html>
